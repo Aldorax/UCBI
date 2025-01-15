@@ -102,7 +102,7 @@ export const TeamSection = () => {
   return (
     <section id="teams" className="container lg:w-[75%] py-24 sm:py-32">
       <div className="text-center mb-8">
-        <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
+        <h2 className="text-lg text-[#00bcd6] text-center mb-2 tracking-wider">
           Team
         </h2>
 
@@ -133,7 +133,7 @@ export const TeamSection = () => {
                 </div>
                 <CardTitle className="py-6 pb-4 px-6">
                   {firstName}
-                  <span className="text-primary ml-2">{lastName}</span>
+                  <span className="text-[#00bcd6] ml-2">{lastName}</span>
                 </CardTitle>
               </CardHeader>
               {positions.map((position, index) => (
