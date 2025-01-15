@@ -77,7 +77,7 @@ export const FeaturesSection = () => {
                   />
                 </div>
 
-                <CardTitle>{title}</CardTitle>
+                <CardTitle className="text-xl md:text-base">{title}</CardTitle>
               </CardHeader>
 
               {/* <CardContent className="text-muted-foreground text-center">

@@ -33,9 +33,9 @@ export const HeroSection = () => {
               <span className="text-white"> Welcome to UCBI </span>
             </Badge>
 
-            <div className="max-w-screen-md mx-auto text-center text-3xl md:text-6xl font-bold">
+            <div className="max-w-screen-md mx-auto text-center text-2xl md:text-6xl font-bold">
               <h1>
-                UCBI Blockchain
+                UCBI <br /> Blockchain
                 <span className="text-transparent px-2 bg-[#00bcd6] bg-clip-text">
                   Data
                 </span>
@@ -43,7 +43,7 @@ export const HeroSection = () => {
               </h1>
             </div>
 
-            <p className="max-w-screen-sm mx-auto text-xl text-white">
+            <p className="max-w-screen-sm mx-auto text-lg px-2 md:text-xl text-white">
               {`We're more than just a tool, we're a community of passionate
               creators. Get access to exclusive resources, tutorials, and support.`}
             </p>

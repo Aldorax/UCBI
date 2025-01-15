@@ -2,7 +2,7 @@ import { DotSquare } from "lucide-react";
 
 export default function Roadmap() {
   return (
-    <div id="roadmap" className="bg-white container p-20 text-black">
+    <div id="roadmap" className="bg-white container p-10 md:p-20 text-black">
       <h1 className="text-2xl font-bold">RoadMap</h1>
       <div className="group relative flex gap-x-5 mt-4">
         <div className="relative group-last:after:hidden after:absolute after:top-8 after:bottom-2 after:start-3 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 after:bg-black-700">
