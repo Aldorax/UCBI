@@ -1,115 +1,114 @@
 import { Separator } from "@/components/ui/separator";
 import { ChevronsDownIcon } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export const FooterSection = () => {
   return (
     <footer id="footer" className="container py-24 sm:py-32">
-      <div className="p-10 bg-card border border-secondary rounded-2xl">
-        <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
+      <div className="p-10 bg-[#f4f4fe] border border-secondary rounded-2xl">
+        <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-5 gap-x-12 gap-y-8">
           <div className="col-span-full xl:col-span-2">
             <Link href="#" className="flex font-bold items-center">
-              <ChevronsDownIcon className="w-9 h-9 mr-2 bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg border border-secondary" />
+              <Image
+                alt="none"
+                src={"/logo.webp"}
+                width={1000}
+                height={1000}
+                className="rounded-lg w-9 h-9 mr-2 text-white"
+              />
 
-              <h3 className="text-2xl">Shadcn</h3>
+              <h3 className="text-2xl">UCBI</h3>
             </Link>
+            <span className="text-sm text-[#5f697d]">
+              Copyright © 2025 <br />
+              UCBI Group Technologies LTD <br />
+              All rights reserved
+            </span>
           </div>
 
-          <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Contact</h3>
+          <div className="flex flex-col gap-2 text-[#102e50] font-semibold text-sm">
+            <h3 className="font-bold text-lg">Features</h3>
             <div>
               <Link href="#" className="opacity-60 hover:opacity-100">
-                Github
+                Coincodex
               </Link>
             </div>
 
             <div>
               <Link href="#" className="opacity-60 hover:opacity-100">
-                Twitter
+                CoinMarket Cap
               </Link>
             </div>
 
             <div>
               <Link href="#" className="opacity-60 hover:opacity-100">
-                Instagram
-              </Link>
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Platforms</h3>
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                iOS
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Android
-              </Link>
-            </div>
-
-            <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Web
+                Etherscan Blockchain
               </Link>
             </div>
           </div>
 
-          <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Help</h3>
+          <div className="flex flex-col gap-2 text-[#102e50] font-semibold text-sm">
+            <h3 className="font-bold text-lg">Resources</h3>
             <div>
               <Link href="#" className="opacity-60 hover:opacity-100">
-                Contact Us
+                Integration & API
               </Link>
             </div>
 
             <div>
               <Link href="#" className="opacity-60 hover:opacity-100">
-                FAQ
+                Trust Wallet Apps
               </Link>
             </div>
 
             <div>
               <Link href="#" className="opacity-60 hover:opacity-100">
-                Feedback
+                Term & Conditions
               </Link>
             </div>
           </div>
 
-          <div className="flex flex-col gap-2">
-            <h3 className="font-bold text-lg">Socials</h3>
+          <div className="flex flex-col gap-2 text-[#102e50] font-semibold text-sm">
+            <h3 className="font-bold text-lg">Need Help?</h3>
             <div>
               <Link href="#" className="opacity-60 hover:opacity-100">
-                Twitch
+                UCBI Support
               </Link>
             </div>
 
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Discord
+              <Link
+                href=""
+                type="email"
+                className="opacity-60 hover:opacity-100"
+              >
+                contact@ucbibanking.io
               </Link>
             </div>
 
             <div>
-              <Link href="#" className="opacity-60 hover:opacity-100">
-                Dribbble
+              <Link
+                href="#"
+                type="email"
+                className="opacity-60 hover:opacity-100"
+              >
+                support@ucbibanking.io
               </Link>
             </div>
           </div>
         </div>
 
         <Separator className="my-6" />
-        <section className="">
+        <section>
           <h3 className="">
-            &copy; 2024 Designed and developed by
+            &copy; 2025
             <Link
               target="_blank"
-              href="https://github.com/leoMirandaa"
-              className="text-primary transition-all border-primary hover:border-b-2 ml-1"
+              href="#"
+              className="text-[#142e53] transition-all border-[#01bcd5] border-b-2 ml-1"
             >
-              Leo Miranda
+              UCBI
             </Link>
           </h3>
         </section>

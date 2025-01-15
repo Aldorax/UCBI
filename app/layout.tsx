@@ -7,8 +7,8 @@ import { ThemeProvider } from "@/components/layout/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Shadcn - Landing template",
-  description: "Landing template from Shadcn",
+  title: "UCBI Banking | Blockchain Data Banking",
+  description: "BlockchainDataBanking",
 };
 
 export default function RootLayout({
@@ -18,7 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" suppressHydrationWarning>
-      <body className={cn("min-h-screen bg-background", inter.className)}>
+      <body
+        className={cn("min-h-screen bg-[#f4f4fe] text-black", inter.className)}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

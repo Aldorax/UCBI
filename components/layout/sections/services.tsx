@@ -1,81 +1,80 @@
-import { Badge } from "@/components/ui/badge";
-import {
-  Card,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import React from "react";
 
-enum ProService {
-  YES = 1,
-  NO = 0,
-}
-interface ServiceProps {
-  title: string;
-  pro: ProService;
-  description: string;
-}
-const serviceList: ServiceProps[] = [
-  {
-    title: "Custom Domain Integration",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit adipisicing.",
-    pro: 0,
-  },
-  {
-    title: "Social Media Integrations",
-    description:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae, dicta.",
-    pro: 0,
-  },
-  {
-    title: "Email Marketing Integrations",
-    description: "Lorem dolor sit amet adipisicing.",
-    pro: 0,
-  },
-  {
-    title: "SEO Optimization",
-    description: "Lorem ipsum dolor sit amet consectetur.",
-    pro: 1,
-  },
-];
-
-export const ServicesSection = () => {
+const ServicesSection = () => {
   return (
-    <section id="services" className="container py-24 sm:py-32">
-      <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-        Services
-      </h2>
-
-      <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-        Grow Your Business
-      </h2>
-      <h3 className="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-        From marketing and sales to operations and strategy, we have the
-        expertise to help you achieve your goals.
-      </h3>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4"></div>
-
-      <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-4 w-full lg:w-[60%] mx-auto">
-        {serviceList.map(({ title, description, pro }) => (
-          <Card
-            key={title}
-            className="bg-muted/60 dark:bg-card h-full relative"
-          >
-            <CardHeader>
-              <CardTitle>{title}</CardTitle>
-              <CardDescription>{description}</CardDescription>
-            </CardHeader>
-            <Badge
-              data-pro={ProService.YES === pro}
-              variant="secondary"
-              className="absolute -top-2 -right-3 data-[pro=false]:hidden"
+    <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+      {/* Grid */}
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Card 1 */}
+        <div className="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl">
+          <div className="h-52 flex flex-col justify-center items-center bg-[#00bcd5] rounded-t-xl"></div>
+          <div className="p-4 md:p-6">
+            <h3 className="text-xl font-semibold text-[#00bcd5]">
+              Trading Market
+            </h3>
+            <p className="mt-3 text-gray-500 dark:text-neutral-500">
+              with limited supply and strategic market positioning and we
+              improve liquidity and maximize investors' potential for efficient
+              and secure trading in crypto markets
+            </p>
+          </div>
+          <div className="mt-auto flex border-t border-gray-200 divide-x divide-gray-200">
+            <a
+              className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
+              href="#"
             >
-              PRO
-            </Badge>
-          </Card>
-        ))}
+              Read more
+            </a>
+          </div>
+        </div>
+        {/* 2 */}
+        <div className="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl">
+          <div className="h-52 flex flex-col justify-center items-center bg-[#00bcd5] rounded-t-xl"></div>
+          <div className="p-4 md:p-6">
+            <h3 className="text-xl font-semibold text-[#00bcd5]">
+              Digital Strategy
+            </h3>
+            <p className="mt-3 text-gray-500 dark:text-neutral-500">
+              Offering all the companies innovative the blockchain solutions
+              tokenization services and strategic advice for the development of
+              the digital economy system
+            </p>
+          </div>
+          <div className="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
+            <a
+              className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
+              href="#"
+            >
+              Read more
+            </a>
+          </div>
+        </div>
+        {/* 3 */}
+        <div className="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl ">
+          <div className="h-52 flex flex-col justify-center items-center bg-[#00bcd5] rounded-t-xl"></div>
+          <div className="p-4 md:p-6">
+            <h3 className="text-xl font-semibold text-[#00bcd5]">
+              Blockchain Union
+            </h3>
+            <p className="mt-3 text-gray-500 dark:text-neutral-500">
+              Joining a global network committed to integrating the blockchain
+              technology for continued collaborative growth and better market
+              opportunities
+            </p>
+          </div>
+          <div className="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
+            <a
+              className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
+              href="#"
+            >
+              Read more
+            </a>
+          </div>
+        </div>
       </div>
-    </section>
+      {/* End Grid */}
+    </div>
   );
 };
+
+export default ServicesSection;

@@ -7,34 +7,37 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { EarthIcon } from "lucide-react";
 
 export const CommunitySection = () => {
   return (
-    <section id="community" className="py-12 ">
+    <section id="community" className="h-[40%] bg-[#142e53]">
       <hr className="border-secondary" />
-      <div className="container py-20 sm:py-20">
-        <div className="lg:w-[60%] mx-auto">
-          <Card className="bg-background border-none shadow-none text-center flex flex-col items-center justify-center">
+      <div className="py-20 sm:py-20">
+        <div className="">
+          <Card
+            className="border-none shadow-none text-center flex flex-col items-center justify-center bg-transparent"
+            h-full
+          >
             <CardHeader>
               <CardTitle className="text-4xl md:text-5xl font-bold flex flex-col items-center">
-                <DiscordIcon />
-                <div>
-                  Ready to join this
-                  <span className="text-transparent pl-2 bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text">
-                    Community?
+                <EarthIcon size={40} />
+                <div className="mt-4">
+                  Read our
+                  <span className="text-transparent pl-2 bg-[#01bcd5] bg-clip-text">
+                    WhitePaper!
                   </span>
                 </div>
               </CardTitle>
             </CardHeader>
-            <CardContent className="lg:w-[80%] text-xl text-muted-foreground">
-              Join our vibrant Discord community! Connect, share, and grow with
-              like-minded enthusiasts. Click to dive in! 🚀
+            <CardContent className="lg:w-[80%] text-xl text-white">
+              Read our whitepaper and learn more about our project.
             </CardContent>
 
             <CardFooter>
-              <Button asChild>
-                <a href="https://discord.com/" target="_blank">
-                  Join Discord
+              <Button asChild className="bg-[#01bcd5]">
+                <a href="#" target="_blank">
+                  Read now
                 </a>
               </Button>
             </CardFooter>
