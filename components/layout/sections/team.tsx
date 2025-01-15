@@ -119,7 +119,7 @@ export const TeamSection = () => {
           ) => (
             <Card
               key={index}
-              className="bg-muted/60 dark:bg-card flex flex-col h-full overflow-hidden group/hoverimg"
+              className="bg-[#112e50] flex flex-col h-full overflow-hidden group/hoverimg"
             >
               <CardHeader className="p-0 gap-0">
                 <div className="h-full overflow-hidden">
@@ -139,9 +139,7 @@ export const TeamSection = () => {
               {positions.map((position, index) => (
                 <CardContent
                   key={index}
-                  className={`pb-0 text-muted-foreground ${
-                    index === positions.length - 1 && "pb-6"
-                  }`}
+                  className={`pb-0 ${index === positions.length - 1 && "pb-6"}`}
                 >
                   {position}
                   {index < positions.length - 1 && <span>,</span>}
