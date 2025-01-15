@@ -12,22 +12,22 @@ const FAQSection = () => {
     {
       question: "What is UCBI Banking?",
       answer:
-        "UCBI Banking is a dynamic group specializing in blockchain technologies which prioritizes the growth of the ecosystem through the creation of common values  within the group and on the markets",
+        "UCBI Banking is a dynamic group specializing in blockchain technologies, dedicated to ecosystem growth by fostering common values within the group and across the markets.",
     },
     {
       question: "What is The UCBI Token?",
       answer:
-        "The UCBI token built on the ERC-20 standard embodies value within the UCBI ecosystem Designed with an emphasis on scarcity and it unifies diverse markets &amp; pairs enhancing its value appreciation potential and The token serves as a versatile asset for transactions investments and other ecosystems.",
+        "The UCBI token, built on the ERC-20 standard, embodies value within the UCBI ecosystem. Designed with an emphasis on scarcity, it unifies diverse markets and pairs, enhancing its potential for value appreciation. The token serves as a versatile asset for transactions, investments, and integration into other ecosystems.",
     },
     {
       question: "How Can I Buy UCBI Token?",
       answer:
-        "UCBI is a decentralized digital asset that supports the thriving cryptocurrency market providing diversification for investors Its limited supply ensures scarcity potentially mitigating inflation risks You can purchase UCBI token by getting in touch with several registered exchanges",
+        "UCBI is a decentralized digital asset that bolsters the thriving cryptocurrency market by offering diversification to investors. Its limited supply ensures scarcity, which may help mitigate inflation risks. The UCBI token is available for purchase through several registered exchanges.",
     },
     {
       question: "How Can I Contact UCBI Banking??",
       answer:
-        "You can reach us through our email or by contacting our support team",
+        "For inquiries, please contact us via email or reach out to our support team.",
     },
   ];
 

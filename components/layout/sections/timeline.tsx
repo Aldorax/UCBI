@@ -25,8 +25,8 @@ export default function Roadmap() {
           </p>
           <ul className="list-disc ms-6 mt-3 space-y-1.5">
             <li className="ps-1 text-sm 600 text-black-400">
-              Creating Marketing Content Create infographics and educational
-              content to help investors understand UCBI’s long-term strategy
+              Developed marketing content, including infographics and
+              educational materials to clarify UCBI’s long-term strategy.
             </li>
           </ul>
         </div>
@@ -55,8 +55,11 @@ export default function Roadmap() {
           <div className="mt-3">
             <ul className="list-disc ms-6 mt-3 space-y-1.5">
               <li className="ps-1 text-sm 600 text-black-400">
-                Performance Monitoring: Track trading volume demand signals and
-                price indicators on this first platform of trading
+                <span className="underline font-semibold">
+                  Performance Monitoring:{" "}
+                </span>
+                Monitored performance by tracking trading volume, demand
+                signals, and price indicators.
               </li>
             </ul>
           </div>
@@ -82,9 +85,12 @@ export default function Roadmap() {
 
           <ul className="list-disc ms-6 mt-3 space-y-1.5">
             <li className="ps-1 text-sm 600 text-black-400">
-              Staking and Retention Strategy: Introduce staking options to
-              encourage token holders to retain their assets thus reducing
-              selling pressure
+              <span className="underline font-semibold">
+                Staking and Retention Strategy:{" "}
+              </span>
+              Implement a staking and retention strategy to encourage token
+              holders to maintain their assets, thereby reducing selling
+              pressure.
             </li>
           </ul>
         </div>

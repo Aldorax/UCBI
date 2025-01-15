@@ -13,9 +13,10 @@ const ServicesSection = () => {
               Trading Market
             </h3>
             <p className="mt-3 text-gray-500 dark:text-neutral-500">
-              with limited supply and strategic market positioning and we
-              improve liquidity and maximize investors' potential for efficient
-              and secure trading in crypto markets
+              Our token features a limited supply and strategic market
+              positioning, enhancing liquidity and optimizing investor potential
+              for efficient and secure trading within the cryptocurrency
+              markets.
             </p>
           </div>
           <div className="mt-auto flex border-t border-gray-200 divide-x divide-gray-200">
@@ -35,9 +36,9 @@ const ServicesSection = () => {
               Digital Strategy
             </h3>
             <p className="mt-3 text-gray-500 dark:text-neutral-500">
-              Offering all the companies innovative the blockchain solutions
-              tokenization services and strategic advice for the development of
-              the digital economy system
+              We offer innovative blockchain solutions, tokenization services,
+              and strategic advice to help companies develop within the digital
+              economy system.
             </p>
           </div>
           <div className="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
@@ -57,9 +58,9 @@ const ServicesSection = () => {
               Blockchain Union
             </h3>
             <p className="mt-3 text-gray-500 dark:text-neutral-500">
-              Joining a global network committed to integrating the blockchain
-              technology for continued collaborative growth and better market
-              opportunities
+              Join a global network committed to integrating blockchain
+              technology for collaborative growth and enhanced market
+              opportunities.
             </p>
           </div>
           <div className="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
