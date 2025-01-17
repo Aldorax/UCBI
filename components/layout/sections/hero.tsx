@@ -26,7 +26,7 @@ export const HeroSection = () => {
         {/* Content */}
         <div className="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32 relative z-10">
           <div className="text-center space-y-8">
-            <Badge variant="outline" className="text-sm py-2">
+            <Badge variant="outline" className="text-sm py-2 outline-black">
               <span className="mr-2 text-primary">
                 <Badge className="bg-[#00bcd6] hover:bg-[#00bcd6]/80">Hi</Badge>
               </span>
@@ -49,7 +49,7 @@ export const HeroSection = () => {
             </p>
 
             <div className="space-y-4 md:space-y-0 md:space-x-4">
-              <Button className="w-5/6 md:w-1/4 font-bold group/arrow bg-[#00bcd6] hover:bg-[#00bcd6]/80">
+              <Button className="w-5/6 md:w-1/4 font-bold group/arrow bg-[#00bcd6] hover:bg-[#00bcd6]/80 text-white">
                 Exchange
                 <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
               </Button>
@@ -57,7 +57,7 @@ export const HeroSection = () => {
               <Button
                 asChild
                 variant="secondary"
-                className="w-5/6 md:w-1/4 font-bold group/arrow bg-[#00bcd6] hover:bg-[#00bcd6]/80"
+                className="w-5/6 md:w-1/4 font-bold group/arrow bg-[#00bcd6] hover:bg-[#00bcd6]/80 text-white"
               >
                 <Link href="#" target="_blank">
                   WhitePaper

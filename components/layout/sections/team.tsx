@@ -8,6 +8,7 @@ import {
   CardTitle,
   CardFooter,
 } from "@/components/ui/card";
+import { EarthIcon, LucideEarth } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 interface TeamProps {
@@ -69,10 +70,10 @@ export const TeamSection = () => {
           name: "LinkedIn",
           url: "https://www.linkedin.com/in/raselmahmud/",
         },
-        {
-          name: "Website",
-          url: "https://icoxdev.com/",
-        },
+        // {
+        //   name: "Website",
+        //   url: "https://icoxdev.com/",
+        // },
       ],
     },
     {
@@ -96,6 +97,8 @@ export const TeamSection = () => {
         return <GithubIcon />;
       case "X":
         return <XIcon />;
+      case "Website":
+        return <LucideEarth />;
     }
   };
 
@@ -119,7 +122,7 @@ export const TeamSection = () => {
           ) => (
             <Card
               key={index}
-              className="bg-[#112e50] flex flex-col h-full overflow-hidden group/hoverimg"
+              className="bg-[#112e50] flex flex-col h-full overflow-hidden group/hoverimg border-black text-white"
             >
               <CardHeader className="p-0 gap-0">
                 <div className="h-full overflow-hidden">
@@ -152,7 +155,7 @@ export const TeamSection = () => {
                     key={index}
                     href={url}
                     target="_blank"
-                    className="hover:opacity-80 transition-all"
+                    className="hover:opacity-80 transition-all text-white p-4 rounded-full bg-white dark:bg-[#00bcd6]"
                   >
                     {socialIcon(name)}
                   </Link>

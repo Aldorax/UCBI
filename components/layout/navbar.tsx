@@ -80,7 +80,7 @@ const featureList: FeatureProps[] = [
 export const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
-    <header className="shadow-inner w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border border-secondary z-40 rounded-2xl flex justify-between items-center p-2 bg-white">
+    <header className="shadow-inner w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border border-black z-40 rounded-2xl flex justify-between items-center p-2 bg-white">
       <Link href="/" className="font-bold text-lg flex items-center">
         <Image
           alt="none"
@@ -164,13 +164,13 @@ export const Navbar = () => {
       </NavigationMenu>
 
       <div className="hidden lg:flex">
-        {/* <ToggleTheme /> */}
+        <ToggleTheme />
 
         <Button
           asChild
           size="sm"
           aria-label="Presale"
-          className="rounded-xl bg-[#00bcd5] hover:bg-[#00bcd5]/80"
+          className="rounded-xl bg-[#00bcd5] hover:bg-[#00bcd5]/80 text-white"
         >
           <Link aria-label="Presale" href="#" target="_blank">
             PreSale

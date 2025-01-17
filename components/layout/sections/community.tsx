@@ -12,7 +12,7 @@ import { EarthIcon } from "lucide-react";
 export const CommunitySection = () => {
   return (
     <section id="community" className="h-[40%] bg-[#142e53]">
-      <hr className="border-secondary" />
+      <hr className="border-black" />
       <div className="py-20 sm:py-20">
         <div className="">
           <Card
@@ -21,8 +21,8 @@ export const CommunitySection = () => {
           >
             <CardHeader>
               <CardTitle className="text-4xl md:text-5xl font-bold flex flex-col items-center">
-                <EarthIcon size={40} />
-                <div className="mt-4">
+                <EarthIcon color="#fff" size={40} />
+                <div className="mt-4 text-white">
                   Read our
                   <span className="text-transparent pl-2 bg-[#01bcd5] bg-clip-text">
                     WhitePaper!
@@ -35,7 +35,7 @@ export const CommunitySection = () => {
             </CardContent>
 
             <CardFooter>
-              <Button asChild className="bg-[#01bcd5]">
+              <Button asChild className="bg-[#01bcd5] text-white">
                 <a href="#" target="_blank">
                   Read now
                 </a>
